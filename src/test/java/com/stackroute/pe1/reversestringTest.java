@@ -16,4 +16,17 @@ public class reversestringTest {
         assertEquals("yajiv",actualResult);
     }
 
+
+    @Test
+    public void givenAStringAndNullShouldReturnErrorMessage() {
+
+        //arrange
+        reversestring g = new reversestring();
+        //act
+        String actualresult=g.reverse(null);
+        //assert
+        assertNotNull(actualresult);
+        assertEquals("Should Not Be Null", actualresult);
+
+    }
 }

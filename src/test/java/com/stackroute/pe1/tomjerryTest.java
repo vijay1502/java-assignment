@@ -13,6 +13,6 @@ public class tomjerryTest {
         //act
         int actualResult=next.compareeven(26);
         //assert
-        assertEquals("26",actualResult);
+        assertEquals(26,actualResult);
     }
 }

@@ -1,20 +1,26 @@
 package com.stackroute.pe1;
 import java.util.*;
 public class guessnumber {
-    public static void main(String[] args){
-        int x=34;
+    public static void main(String[] args) {
+
         System.out.println("Guess a Number: ");
-        Scanner sc= new Scanner(System.in);
-        int input=sc.nextInt();
-        if (input >= 1 && input <= 50) {
-            if(input==x) {
-                System.out.println("The number you entered is "+input+" and is guessed properly");
+        Scanner sc = new Scanner(System.in);
+        int input = sc.nextInt();
+        guessnumber g=new guessnumber();
+        g.guesser(input);
+    }
+
+    public int guesser(int inp){
+        int x = 34;
+        if (inp >= 1 && inp <= 50) {
+            if(inp==x) {
+                System.out.println("The number you entered is "+inp+" and is guessed properly");
             }
-            else if(input>x) {
-                System.out.println("The number you entered is"+input+"and is "+(input-x)+" greater than the original number");
+            else if(inp>x) {
+                System.out.println("The number you entered is"+inp+"and is "+(inp-x)+" greater than the original number");
             }
-            else if(input<x) {
-                System.out.println("The number you entered is"+input+"and is "+(x-input)+" Lesser than the original number");
+            else if(inp<x) {
+                System.out.println("The number you entered is"+inp+"and is "+(x-inp)+" Lesser than the original number");
             }
 
         }
@@ -22,5 +28,6 @@ public class guessnumber {
             System.out.println("Given Number is not in the bounds,give a number that is greater than 1 and less than 50");
         }
 
+        return x;
     }
 }
