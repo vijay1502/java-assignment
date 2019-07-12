@@ -10,26 +10,18 @@ public class guessnumber {
         g.guesser(input);
     }
 
-    public int guesser(int inp){
+    public String guesser(int inp){
         int x = 34;
-        if (inp >= 1 && inp <= 50) {
-            if(inp==x) {
-                System.out.println("The value matches");
-               return inp=x;
+        if (inp >= 1 && inp <= 50)
+            if (inp == x)
+                return ("The value matches");
 
-            }
-            else if(inp>x) {
-                System.out.println("The number you entered is"+inp+"and is "+(inp-x)+" greater than the original number");
-            }
-            else if(inp<x) {
-                System.out.println("The number you entered is"+inp+"and is "+(x-inp)+" Lesser than the original number");
-            }
+            else if (inp > x)
+                return ("The number you entered is" + inp + "and is " + (inp - x) + " greater than the original number");
 
-        }
-        else {
-            System.out.println("Given Number is not in the bounds,give a number that is greater than 1 and less than 50");
-        }
+            else if (inp < x)
+                return ("The number you entered is" + inp + "and is " + (x - inp) + " Lesser than the original number");
 
-        return x;
+
     }
 }

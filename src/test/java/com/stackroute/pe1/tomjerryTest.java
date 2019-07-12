@@ -7,12 +7,24 @@ import static org.junit.Assert.*;
 public class tomjerryTest {
 
     @Test
-    public void givenAnIntegerShouldReturnTomOrJerry() {
+    public void givenAnIntegerShouldReturnStringAsJerry() {
         //arrange
         tomjerry next = new tomjerry();
         //act
-        int actualResult=next.compareeven(26);
+        String actualResult=next.compareeven(26);
         //assert
-        assertEquals(26,actualResult);
+        assertEquals("jerry",actualResult);
     }
+
+    @Test
+    public void givenAnIntegerShouldReturnStringAsTom() {
+        //arrange
+        tomjerry next = new tomjerry();
+        //act
+        String actualResult=next.compareeven(23);
+        //assert
+        assertEquals("tom",actualResult);
+    }
+
 }
+

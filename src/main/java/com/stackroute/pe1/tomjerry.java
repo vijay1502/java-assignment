@@ -10,15 +10,14 @@ public class tomjerry {
         t.compareeven(x);
     }
 
-        public int compareeven(int g){
-        if(g>=20 &&g<=30){
-            if(g%2==0){
-                System.out.println("jerry");
-            }
-            else{
-                System.out.println("tom");
-            }
+        public String compareeven(int g){
+        if(g>20&&g<30) {
+            if (g % 2 == 0)
+                return ("jerry");
+
+            else
+                return ("tom");
         }
-            return g;
-        }
+
+    else return("The input is not in the given bound");        }
 }

@@ -18,7 +18,7 @@ public class reversestringTest {
 
 
     @Test
-    public void givenAStringAndNullShouldReturnErrorMessage() {
+    public void givenNullShouldReturnErrorMessage() {
 
         //arrange
         reversestring g = new reversestring();

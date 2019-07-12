@@ -10,10 +10,10 @@ public class alphatypeTest {
 
     public void givenAStringShouldReturnVowelsAndConsonants() {
         //arrange
-
+        alphatype at= new alphatype();
         //act
-        String actualResult=alphatype.vowelcons("vijay");
+        String actualResult=at.vowelcons("v");
         //assert
-        assertEquals("vijay",actualResult);
+        assertEquals("consonant",actualResult);
     }
 }
