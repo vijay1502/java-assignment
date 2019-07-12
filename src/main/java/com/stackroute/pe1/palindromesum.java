@@ -3,26 +3,31 @@ package com.stackroute.pe1;
 import java.util.*;
 public class palindromesum {
     public static void main(String[] args){
-        int x=0,temp,rem,sum=0;
+
         System.out.println("Enter an Integer :");
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
-
-        temp=a;
-        while(a>0){
-            rem=a%10;
+        palindromesum c= new palindromesum();
+        c.palindromeChecker(a);
+    }
+    public int palindromeChecker(int b){
+    int temp,rem,sum=0,x=0;
+        while(b>0){
+            rem=b%10;
             if(rem%2==0) {
                 sum = sum + rem;
             }
             x=(x*10)+rem;
-            a=a/10;
+            b=b/10;
         }
+        temp=b;
         if(x==temp){
-            System.out.println(temp +" is  a Palindrome");
+            System.out.println("It is  a Palindrome");
         }
         else{
-            System.out.println(temp+" is not a palindrome ");
+            System.out.println("It is not a palindrome ");
         }
         System.out.println("Sum of even Numbers is"+sum);
-    }
-}
+        return temp;
+    }}
+

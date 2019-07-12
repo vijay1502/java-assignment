@@ -6,13 +6,19 @@ public class tomjerry {
         System.out.println("Enter an Integer :");
         Scanner sc= new Scanner(System.in);
         int x =sc.nextInt();
-        if(x>20&&x<30){
-            if(x%2==0){
+        tomjerry t=new tomjerry();
+        t.compareeven(x);
+    }
+
+        public int compareeven(int g){
+        if(g>20&&g<30){
+            if(g%2==0){
                 System.out.println("jerry");
             }
             else{
                 System.out.println("tom");
             }
         }
-    }
+            return g;
+        }
 }
