@@ -14,7 +14,9 @@ public class guessnumber {
         int x = 34;
         if (inp >= 1 && inp <= 50) {
             if(inp==x) {
-                System.out.println("The number you entered is "+inp+" and is guessed properly");
+                System.out.println("The value matches");
+               return inp=x;
+
             }
             else if(inp>x) {
                 System.out.println("The number you entered is"+inp+"and is "+(inp-x)+" greater than the original number");

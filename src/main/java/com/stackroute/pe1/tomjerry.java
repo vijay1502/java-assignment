@@ -11,7 +11,7 @@ public class tomjerry {
     }
 
         public int compareeven(int g){
-        if(g>20&&g<30){
+        if(g>=20 &&g<=30){
             if(g%2==0){
                 System.out.println("jerry");
             }

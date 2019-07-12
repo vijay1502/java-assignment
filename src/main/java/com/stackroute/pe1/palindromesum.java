@@ -22,7 +22,7 @@ public class palindromesum {
         }
         temp=b;
         if(x==temp){
-            System.out.println("It is  a Palindrome");
+            System.out.println("It is a Palindrome");
         }
         else{
             System.out.println("It is not a palindrome ");

@@ -12,9 +12,9 @@ public class palindromesumTest {
 
 
         //act
-        int actualResult= p.palindromeChecker(121);
+        int actualResult= p.palindromeChecker(12321);
 
         //assert
-        assertEquals("It is a palindrome",actualResult);
+        assertEquals(12321,actualResult);
     }
 }

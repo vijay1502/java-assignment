@@ -14,7 +14,7 @@ public class guessnumberTest {
         int actualResult=g.guesser(34);
 
         //assert
-        assertEquals("The number you entered is 34 and is guessed properly",actualResult);
+        assertEquals(34,actualResult);
 
     }
 
