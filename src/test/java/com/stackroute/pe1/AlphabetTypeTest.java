@@ -9,11 +9,9 @@ public class AlphabetTypeTest {
     @Test
     public void givenAStringShouldReturnStringTypeOfAlphabet()  {
         AlphabetType alphabet=new AlphabetType();
-        String actualResult=alphabet.vowelAndConsonant("Vijay");
-        assertEquals();
+        String actualResult=alphabet.vowelAndConsonant("V");
+        assertEquals("consonant",actualResult);
     }
 
-    @Test
-    public void  {
-    }
+    
 }
