@@ -4,14 +4,14 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class tomjerryTest {
+public class conditionBasedOutputTest {
 
     @Test
     public void givenAnIntegerShouldReturnStringAsJerry() {
         //arrange
-        tomjerry next = new tomjerry();
+        ConditionBasedOutput next = new ConditionBasedOutput();
         //act
-        String actualResult=next.compareeven(26);
+        String actualResult=next.compareCondition(26);
         //assert
         assertEquals("jerry",actualResult);
     }
@@ -19,12 +19,14 @@ public class tomjerryTest {
     @Test
     public void givenAnIntegerShouldReturnStringAsTom() {
         //arrange
-        tomjerry next = new tomjerry();
+        ConditionBasedOutput next = new ConditionBasedOutput();
         //act
-        String actualResult=next.compareeven(23);
+        String actualResult=next.compareCondition(23);
         //assert
         assertEquals("tom",actualResult);
     }
 
 }
+
+
 

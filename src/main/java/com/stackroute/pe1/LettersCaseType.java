@@ -1,13 +1,13 @@
 package com.stackroute.pe1;
 import java.util.*;
-public class capital{
+public class LettersCaseType {
     public static void main(String[] args){
         System.out.println("Enter Character");
-        Scanner sc = new Scanner(System.in);
-        String str = sc.next();
-        char ch = str.charAt(0);
-        int x = (int)ch;
-        if (x >= 65 && x <= 90) {
+        Scanner scanner = new Scanner(System.in);
+        String string = scanner.next();
+        char character = string.charAt(0);
+        int asciiValue = (int)character;
+        if (asciiValue>= 65 && asciiValue <= 90) {
             System.out.println("Capital Letter");
         } else {
             System.out.println("Small Letter");

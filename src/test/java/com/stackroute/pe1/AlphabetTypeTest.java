@@ -1,0 +1,19 @@
+package com.stackroute.pe1;
+
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+public class AlphabetTypeTest {
+
+    @Test
+    public void givenAStringShouldReturnStringTypeOfAlphabet()  {
+        AlphabetType alphabet=new AlphabetType();
+        String actualResult=alphabet.vowelAndConsonant("Vijay");
+        assertEquals();
+    }
+
+    @Test
+    public void  {
+    }
+}
