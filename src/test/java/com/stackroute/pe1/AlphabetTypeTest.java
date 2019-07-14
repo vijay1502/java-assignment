@@ -13,5 +13,12 @@ public class AlphabetTypeTest {
         assertEquals("consonant",actualResult);
     }
 
-    
+    @Test
+    public void givenAStringShouldReturnStringTypeAsVowel()  {
+        AlphabetType alphabet=new AlphabetType();
+        String actualResult=alphabet.vowelAndConsonant("a");
+        assertEquals("vowel",actualResult);
+    }
+
+
 }
