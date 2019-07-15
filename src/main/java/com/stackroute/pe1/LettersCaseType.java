@@ -13,9 +13,9 @@ public class LettersCaseType {
         char character = alpha.charAt(0);
         int asciiValue = (int)character;
         if (asciiValue>= 65 && asciiValue <= 90)
-            return System.out.println("Capital Letter");
+            return ("Capital Letter");
          else
-          return   System.out.println("Small Letter");
+          return  ("Small Letter");
 
     }
 }
