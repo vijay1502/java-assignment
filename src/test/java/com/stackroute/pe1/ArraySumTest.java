@@ -4,16 +4,11 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class arraysumTest {
+public class ArraySumTest {
 
     @Test
     public void givenAnIntegerArrayShouldReturnTheSumOfArrayElements(){
-        arraysum x=new arraysum();
+       }
 
 
-    }
-
-    @Test
-    public void summethod() {
-    }
 }

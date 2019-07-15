@@ -5,39 +5,23 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class NumberRepeatingSequenceTest {
-    NumberRepeatingSequence numberRepeat;
-    public void setUp(){
-        //arrange
-        System.out.println("Inside Before");
-        this.numberRepeat = new NumberRepeatingSequence();
-    }
+import static junit.framework.TestCase.assertEquals;
 
-    @After
-    public void tearDown(){
-        System.out.println("Inside After");
-        numberRepeat=null;
-    }
-    @BeforeClass
-    public static void beforeClass(){
-        System.out.println("Before Class");
-    }
-    @AfterClass
-    public static void afterClass(){
-        System.out.println("After Class");
-    }
+public class NumberRepeatingSequenceTest {
+
+
 
 
 
 
     @Test
     public void givenAnIntegerShouldReturnRepetingCount(){
+
     //arrange
-        NumberRepeatingSequence numberRepeat= new NumberRepeatingSequence();
-        //act
-        int actualResult=numberRepeat.repeatingNumberMethod(4);
-        //assert
-        assertEquals(10,actualResult);
+        NumberRepeatingSequence numberRepeat=new NumberRepeatingSequence();
+    int actualresult = numberRepeat.repeatingNumberMethod(4);
+
+    assertEquals(10,actualresult);
 
     }
 

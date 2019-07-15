@@ -20,5 +20,6 @@ public class NumberRepeatingSequence {
 
             }
         }
-    return count;}
-}
+
+             return count;}
+    }

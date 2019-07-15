@@ -10,6 +10,8 @@ public class AlphabetTypeTest {
     public void givenAStringShouldReturnStringTypeOfAlphabet()  {
         AlphabetType alphabet=new AlphabetType();
         String actualResult=alphabet.vowelAndConsonant("V");
+
+
         assertEquals("consonant",actualResult);
     }
 

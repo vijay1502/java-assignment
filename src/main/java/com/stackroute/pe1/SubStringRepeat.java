@@ -2,15 +2,16 @@ package com.stackroute.pe1;
 import java.util.*;
 public class SubStringRepeat {
     public static void main(String[] args){
-        int length;
+
         Scanner scanner= new Scanner(System.in);
         String word= scanner.next();
     SubStringRepeat subStringRepeat=new SubStringRepeat();
     subStringRepeat.stringRepeatingMethod(word);}
 
     public String stringRepeatingMethod(String word){
+        int length;
         Scanner scanner= new Scanner(System.in);
-        int repeatNumber= scanned.nextInt();
+        int repeatNumber= scanner.nextInt();
         String repeatingSubString ="";
 
         length=word.length();

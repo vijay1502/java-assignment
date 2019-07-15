@@ -29,13 +29,5 @@ public class LettersCaseTypeTest {
 
     }
 
-    @Test
-    public void givenAStringAndNullShouldReturnErrorMessage(){
 
-        //act
-        String actualResult=letterCase.letterTypeMethod(null);
-        //assert
-        assertNotNull(actualResult);
-        assertEquals("Null Value Not Allowed",actualResult);
-    }
 }

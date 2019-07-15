@@ -12,7 +12,7 @@ public class integerPalindromeAndEvenSumTest {
 
         IntegerPalindromeAndEvenSum palindrome=new IntegerPalindromeAndEvenSum();
         //act
-        int actualResult= palindrome.palindromeAndSumMethod(12321);
+        int actualResult= palindrome.palindromeOrNot(12321);
 
         //assert
         assertEquals("It is a Palindrome",actualResult);
@@ -24,7 +24,7 @@ public class integerPalindromeAndEvenSumTest {
 
         IntegerPalindromeAndEvenSum palindrome=new IntegerPalindromeAndEvenSum();
         //act
-        int actualResult= palindrome.palindromeAndSumMethod(12332);
+        int actualResult= palindrome.palindromeOrNot(12332);
 
         //assert
         assertEquals("It is not a Palindrome",actualResult);
