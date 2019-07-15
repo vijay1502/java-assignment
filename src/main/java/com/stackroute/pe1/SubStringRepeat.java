@@ -5,7 +5,11 @@ public class SubStringRepeat {
         int length;
         Scanner scanner= new Scanner(System.in);
         String word= scanner.next();
-        Scanner scanned= new Scanner(System.in);
+    SubStringRepeat subStringRepeat=new SubStringRepeat();
+    subStringRepeat.stringRepeatingMethod(word);}
+
+    public String stringRepeatingMethod(String word){
+        Scanner scanner= new Scanner(System.in);
         int repeatNumber= scanned.nextInt();
         String repeatingSubString ="";
 
@@ -17,7 +21,7 @@ public class SubStringRepeat {
                 repeatingSubString=repeatingSubString+(word.charAt(j));}
 
         }
-        System.out.println(word+repeatingSubString);
-
+        System.out.println(word.concat(repeatingSubString));
+        return word.concat(repeatingSubString);
     }
 }
