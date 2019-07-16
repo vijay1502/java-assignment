@@ -1,0 +1,7 @@
+
+Nsquid:S1481"+Remove this unused "length" local variable.(”Ú´ıÿÿÿÿ8£ÇÏ›¿-
+Osquid:S1481",Remove this unused "scanner" local variable.(ù ƒ‘üÿÿÿÿ8şŞÕ›¿-
+^squid:S1854";Remove this useless assignment to local variable "scanner".(ù ƒ‘üÿÿÿÿ8şŞÕ›¿-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(€ÏÀ’ıÿÿÿÿ
+8squid:S1643"Use a StringBuilder instead.(²¤¼ùÿÿÿÿ
