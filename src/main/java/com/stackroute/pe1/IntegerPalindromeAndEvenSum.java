@@ -3,31 +3,39 @@ package com.stackroute.pe1;
 import java.util.*;
 public class IntegerPalindromeAndEvenSum {
     public static void main(String[] args){
-
-        System.out.println("Enter an Integer :");
-        Scanner scanner = new Scanner(System.in);
-        int palindromeNumber = scanner.nextInt();
-        IntegerPalindromeAndEvenSum palindromeObject= new IntegerPalindromeAndEvenSum();
-        palindromeObject.palindromeAndSumMethod(palindromeNumber);
+        int number,temporary,reverse;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any number ");
+        number=sc.nextInt();
+        temporary=number;
+        reverse=palindromeOrNot(number);
+        if(reverse==temporary)
+            System.out.println(temporary+" is a palindrome number ");
+        else
+            System.out.println(temporary+" is not a palindrome number ");
     }
-    public int palindromeAndSumMethod(int formalNumber){
-    int temporary,reminder,sum=0,reverse=0;
-        while(formalNumber>0){
-            reminder=formalNumber%10;
-            if(reminder%2==0) {
-                sum = sum + reminder;
-            }
-            reverse=(reverse*10)+reminder;
-            formalNumber=formalNumber/10;
+   public static int  palindromeOrNot(int num )
+    {
+        int reverse=0,reminder;
+        while(num!=0)
+        {
+            reminder=num%10;
+            reverse =(reverse*10)+reminder;
+            num/=10;
         }
-        temporary=formalNumber;
-        if(reverse==temporary){
-            System.out.println("It is a Palindrome");
+        return reverse;
+
+    }
+
+public int palindromeSum(int number){
+        int reminder,sum=0;
+        while (number>0){
+        reminder=number%10;
+        if(reminder%2==0){
+            sum=sum+reminder;
         }
-        else{
-            System.out.println("It is not a palindrome ");
+        number=number/10;
         }
-        System.out.println("Sum of even Numbers is"+sum);
-        return temporary;
-    }}
+
+return sum;}}
 
