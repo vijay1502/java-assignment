@@ -45,6 +45,16 @@ public class ConditionBasedOutputTest {
         assertEquals("tom",actualResult);
     }
 
+    @Test
+    public void givenAnIntegerShouldReturnErrorIfOutOFBounds() {
+        //arrange
+        ConditionBasedOutput next = new ConditionBasedOutput();
+        //act
+        String actualResult=next.compareCondition(35);
+        //assert
+        assertEquals("The input is not in the given bound",actualResult);
+    }
+
 }
 
 
