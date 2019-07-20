@@ -1,7 +1,7 @@
 package com.stackroute.pe1;
 import java.util.*;
 public class LettersCaseType {
-    String[] output;
+
    /* public static void main(String[] args){
         System.out.println("Enter Character");
         Scanner scanner = new Scanner(System.in);
@@ -9,22 +9,20 @@ public class LettersCaseType {
         LettersCaseType lettersCaseType=new LettersCaseType();
     lettersCaseType.letterTypeMethod(string);}*/
 
-    public String letterCaseMethod(String alphabetCase){
-
+    public String[] letterCaseMethod(String alphabetCase){
+        String[] output=new String[alphabetCase.length()];
         for(int i=0;i<alphabetCase.length();i++){
             int asciiValue=(int)alphabetCase.charAt(i);
             if(asciiValue>=65&&asciiValue<=90){
-                String temporary="Capital Letter";
-                output[i]=temporary;
+                output[i]="Capital Letter";
             }
             else if(asciiValue>=97&&asciiValue<=122) {
-                String temporary="Small Letter";
-                output[i]=temporary;
+                output[i]="Small Letter";
+
             }
             else{
-                String temporary="Given String is not an alphabet";
-                output[i]=temporary;
-            }
+                output[i]="Given String is not an alphabet";
+              }
         }
-   return Arrays.toString(output); }
+    return output;}
 }

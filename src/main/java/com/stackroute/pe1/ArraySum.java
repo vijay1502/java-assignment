@@ -18,7 +18,7 @@ public class ArraySum{
         //Creating method named ArraysumMethod with an input as integer*/
 
         public String arraySumMethod(int[] input){
-            int temporary;
+
             int sumOfElements = 0;
 
             //input the elements
@@ -28,6 +28,7 @@ public class ArraySum{
 
               return ("SUm of array Elements is "+sumOfElements);
         }
+
     }
 
 
