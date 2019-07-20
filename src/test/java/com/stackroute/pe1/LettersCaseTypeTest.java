@@ -19,21 +19,12 @@ public class LettersCaseTypeTest {
     }
 
 
-    @Test
-    public void givenAStringShouldReturnStringAsSmall() {
-
-    String[] output={"Capital Letter","Small Letter","Small Letter"};
-    String[] actualResult=letterCase.letterCaseMethod("Vij");
-    assertArrayEquals(output,actualResult);
-    }
 
     @Test
-    public void givenAStringShouldReturnStringAsCapital() {
-        String[] output={"Capital Letter","Small Letter","Given String is not an alphabet"};
-        String[] actualResult=letterCase.letterCaseMethod("Vi$");
-        assertArrayEquals(output,actualResult);
+    public void givenAStringShouldReturnStringBasedOnAlphabetType() {
+        String output="[Capital Letter, Small Letter, Given String is not an alphabet]";
+        String actualResult=letterCase.letterCaseMethod("Vi$");
+        assertEquals(output,actualResult);
 
     }
-
-
-}
+    }

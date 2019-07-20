@@ -29,7 +29,7 @@ public class AlphabetTypeTest {
     @Test
     public void givenAStringShouldReturnStringArray()  {
 
-        String[] result={"consonant,vowel,consonant,vowel,consonant"};
+        String[] result={"consonant","vowel","consonant","vowel","consonant"};
         String[] actualResult=alphabetType.vowelAndConsonantFinder("Vijay");
         assertArrayEquals(result,actualResult);
     }

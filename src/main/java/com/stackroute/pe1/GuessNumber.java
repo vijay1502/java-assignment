@@ -10,17 +10,17 @@ public class GuessNumber {
         guessObject.guessOutput(input);
     }
 */
-    public String guessOutput(int inp){
+    public String guessOutput(int input){
         int systemInput= 34;
-        if (inp >= 1 && inp <= 50) {
-            if (inp == systemInput)
+        if (input >= 1 && input <= 50) {
+            if (input == systemInput)
                 return ("The value matches");
 
-            else if (inp >systemInput)
-                return ("The number you entered is " + inp + " and is " + (inp - systemInput) + " greater than the original number");
+            else if (input >systemInput)
+                return ("The number you entered is " + input + " and is " + (input - systemInput) + " greater than the original number");
 
-            else if (inp < systemInput)
-                return ("The number you entered is " + inp + " and is " + (systemInput - inp) + " Lesser than the original number");
+            else if (input < systemInput)
+                return ("The number you entered is " + input + " and is " + (systemInput - input) + " Lesser than the original number");
                 }
             return ("Input is not in the given bounds");
     }

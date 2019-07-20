@@ -1,28 +1,25 @@
 package com.stackroute.pe1;
 import java.util.*;
 public class SubStringRepeat {
-    public static void main(String[] args){
+  /*  public static void main(String[] args){
 
         Scanner scanner= new Scanner(System.in);
         String word= scanner.next();
     SubStringRepeat subStringRepeat=new SubStringRepeat();
-    subStringRepeat.stringRepeatingMethod(word);}
+    subStringRepeat.stringRepeatingMethod(word);}*/
 
-    public String stringRepeatingMethod(String word){
-        int length;
+    public String stringRepeatingMethod(String word,int repeatNumber){
         Scanner scanner= new Scanner(System.in);
-        int repeatNumber= scanner.nextInt();
+        repeatNumber= scanner.nextInt();
+        if(word!=null){
         String repeatingSubString ="";
-
-        length=word.length();
+        int length=word.length();
         for(int i=0;i<repeatNumber;i++){
             for(int j=length-repeatNumber;j<word.length();j++)
             {
-
                 repeatingSubString=repeatingSubString+(word.charAt(j));}
-
         }
         System.out.println(word.concat(repeatingSubString));
         return word.concat(repeatingSubString);
-    }
+    }else return "null is not allowed";}
 }

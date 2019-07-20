@@ -54,7 +54,7 @@ public class StringReverseTest {
         //act
         String actualResult=g.reverse("a");
         //assert
-        assertNotNull(actualResult);
+
         assertEquals("Single value can't be reversed",actualResult);
     }
     }

@@ -10,9 +10,9 @@ public class ConditionBasedOutput {
         t.compareCondition(number);
     }*/
 
-        public String compareCondition(int formalNumber){
-        if(formalNumber>=20&&formalNumber<=30) {
-            if (formalNumber % 2 == 0)
+        public String compareCondition(int InputNumber){
+        if(InputNumber>=20&&InputNumber<=30) {
+            if (InputNumber % 2 == 0)
                 return ("jerry");
 
             else

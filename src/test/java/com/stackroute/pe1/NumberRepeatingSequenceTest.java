@@ -5,13 +5,13 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static junit.framework.TestCase.assertEquals;
+import static org.junit.Assert.*;
 
 public class NumberRepeatingSequenceTest {
 
-    private static NumberRepeatingSequence numberRepeatingSequence;
+    NumberRepeatingSequence numberRepeatingSequence;
     @Before
-    public static void setup() {
+    public void setup() {
         // This methods runs, before running any one of the test case
         // This method is used to initialize the required variables
         numberRepeatingSequence = new NumberRepeatingSequence();
@@ -19,7 +19,7 @@ public class NumberRepeatingSequenceTest {
     }
 
     @After
-    public static void teardown() {
+    public void teardown() {
         // This method runs, after running all the test cases
         // This method is used to clear the initialized variables
         numberRepeatingSequence = null;
@@ -33,11 +33,9 @@ public class NumberRepeatingSequenceTest {
     @Test
     public void givenAnIntegerShouldReturnRepetingCount(){
 
-    //arrange
-        NumberRepeatingSequence numberRepeat=new NumberRepeatingSequence();
-    int actualresult = numberRepeat.repeatingNumberMethod(4);
-
-    assertEquals(10,actualresult);
+        int[] output={1,2,2,3,3,3};
+    int[] actualresult = numberRepeatingSequence.repeatingNumberMethod(3);
+    assertArrayEquals(output,actualresult);
 
     }
 

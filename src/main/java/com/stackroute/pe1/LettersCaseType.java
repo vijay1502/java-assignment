@@ -9,8 +9,9 @@ public class LettersCaseType {
         LettersCaseType lettersCaseType=new LettersCaseType();
     lettersCaseType.letterTypeMethod(string);}*/
 
-    public String[] letterCaseMethod(String alphabetCase){
+    public String letterCaseMethod(String alphabetCase){
         String[] output=new String[alphabetCase.length()];
+
         for(int i=0;i<alphabetCase.length();i++){
             int asciiValue=(int)alphabetCase.charAt(i);
             if(asciiValue>=65&&asciiValue<=90){
@@ -22,7 +23,8 @@ public class LettersCaseType {
             }
             else{
                 output[i]="Given String is not an alphabet";
-              }
+            }
         }
-    return output;}
+    return Arrays.toString(output);}
+
 }
