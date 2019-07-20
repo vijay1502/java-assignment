@@ -1,5 +1,6 @@
 package com.stackroute.pe1;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,22 +11,26 @@ public class LettersCaseTypeTest {
     LettersCaseType letterCase;
     @Before
     public void setup(){
-        this.letterCase=new LettersCaseType();
+       letterCase=new LettersCaseType();
+    }
+    @After
+    public void tearDown(){
+        letterCase=null;
     }
 
 
     @Test
     public void givenAStringShouldReturnStringAsSmall() {
-
-    String actualResult=letterCase.letterTypeMethod("a");
-    assertEquals("Small Letter",actualResult);
+    String output="Capital Letter,Small Letter,Small Letter";
+    String actualResult=letterCase.letterCaseMethod("Vij");
+    assertEquals(output,actualResult);
     }
 
     @Test
     public void givenAStringShouldReturnStringAsCapital() {
-
-        String actualResult=letterCase.letterTypeMethod("A");
-        assertEquals("Capital Letter",actualResult);
+        String output="Capital Letter,Small Letter,Given String is not an alphabet";
+        String actualResult=letterCase.letterCaseMethod("Vi$");
+        assertEquals(output,actualResult);
 
     }
 

@@ -17,14 +17,14 @@ public class ArraySum{
         }
         //Creating method named ArraysumMethod with an input as integer*/
 
-        public String arraySumMethod(int[] a){
+        public String arraySumMethod(int[] input){
+            int temporary;
             int sumOfElements = 0;
-            a=new int[a.length];
+
             //input the elements
-            for (int i = 0; i < a.length; i++) {
-            int temporary= a[i];
-            sumOfElements=sumOfElements+temporary;
-            }
+            for (int i = 0; i < input.length; i++)
+            {
+            sumOfElements=sumOfElements+input[i];}
 
               return ("SUm of array Elements is "+sumOfElements);
         }

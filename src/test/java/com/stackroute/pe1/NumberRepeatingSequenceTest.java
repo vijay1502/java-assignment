@@ -1,8 +1,8 @@
 package com.stackroute.pe1;
 
 import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
@@ -10,7 +10,7 @@ import static junit.framework.TestCase.assertEquals;
 public class NumberRepeatingSequenceTest {
 
     private static NumberRepeatingSequence numberRepeatingSequence;
-    @BeforeClass
+    @Before
     public static void setup() {
         // This methods runs, before running any one of the test case
         // This method is used to initialize the required variables
@@ -18,7 +18,7 @@ public class NumberRepeatingSequenceTest {
 
     }
 
-    @AfterClass
+    @After
     public static void teardown() {
         // This method runs, after running all the test cases
         // This method is used to clear the initialized variables

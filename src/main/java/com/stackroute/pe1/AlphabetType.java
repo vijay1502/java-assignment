@@ -3,9 +3,11 @@ package com.stackroute.pe1;
 
 import java.util.*;
 //Class name is Alphabet Type and the output returns Whether the string inputs are vowel or consonant
-public class AlphabetType {
+public class AlphabetType{
 
-    String[] alphabet;
+   char[] alphabet;
+   String[] result;
+   String temporary;
     //  Input to enter a string
      /*   System.out.println("Enter a string :");
         Scanner scanner = new Scanner(System.in);
@@ -17,19 +19,18 @@ public class AlphabetType {
     //A method named vowelAndConsonant which has a formal parameter 'word' which replicates 'words' in main()...
     public String[] vowelAndConsonantFinder(String word) {
 
-        for (int i = 0; i < word.length(); i++) {
-            if (word.charAt(i) == 'a'||word.charAt(i) == 'e'||word.charAt(i) == 'i'||word.charAt(i) == 'o'||word.charAt(i) == 'u'){
-                //If any of the character is vowel, return it...else return consonant
-               String words = ("vowel");
-                alphabet[i]=words;
-            }
-            else{
-               String words=("consonant");
-                alphabet[i]=words;
-            }
-        }
 
-    return alphabet;}
+            for(int j=0;j<word.length();j++){
+                if(word.charAt(j)=='a'||word.charAt(j)=='e'||word.charAt(j)=='i'||word.charAt(j)=='o'||word.charAt(j)=='u'||
+                        word.charAt(j)=='A'||word.charAt(j)=='E'||word.charAt(j)=='I'||word.charAt(j)=='O'||word.charAt(j)=='U') {
+                    temporary="vowel";
+                    result[j]=temporary;
+                }
+                else {
+                    temporary="consonant";}
+                    result[j]=temporary;
+            }
+        return result;}
 }
 
 
